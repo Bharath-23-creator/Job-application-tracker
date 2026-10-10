@@ -1,0 +1,76 @@
+.add-application {
+  width: 100%;
+  padding: 40px;
+}
+
+.add-application h1 {
+  margin: 0;
+}
+
+.add-application > p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.application-form {
+  max-width: 800px;
+  background: white;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.save-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .add-application {
+    padding: 20px;
+  }
+
+  .application-form {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,21 @@
+
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.py[cod]
+backend/.env
+
+# React
+job-application-tracker/node_modules/
+job-application-tracker/dist/
+job-application-tracker/.env
+
+# Local files
+.DS_Store
+Thumbs.db
+
+# Environment secrets
+.env
+backend/.env
+job-application-tracker/.env
