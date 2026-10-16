@@ -1,21 +1,14 @@
+# Dependencies
+node_modules/
 
-# Python
-backend/venv/
-backend/__pycache__/
-backend/**/__pycache__/
-backend/*.py[cod]
-backend/.env
+# Build output
+dist/
 
-# React
-job-application-tracker/node_modules/
-job-application-tracker/dist/
-job-application-tracker/.env
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
 
 # Local files
 .DS_Store
 Thumbs.db
-
-# Environment secrets
-.env
-backend/.env
-job-application-tracker/.env

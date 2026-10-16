@@ -34,7 +34,12 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    os.getenv("RENDER_EXTERNAL_HOSTNAME", ""),
+]
+
 
 
 # Application definition
@@ -88,6 +93,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
@@ -96,8 +102,14 @@ DATABASES = {
         "PASSWORD": os.getenv("DB_PASSWORD", ""),
         "HOST": os.getenv("DB_HOST", "localhost"),
         "PORT": os.getenv("DB_PORT", "3306"),
+        "OPTIONS": {
+    "ssl": {
+        "ca": os.getenv("DB_SSL_CA", "ca.pem"),
+    },
+},
     }
 }
+
 
 
 
