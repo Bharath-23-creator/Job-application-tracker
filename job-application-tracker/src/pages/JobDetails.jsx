@@ -11,7 +11,7 @@ function JobDetails() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/applications/${id}/`, {
+    fetch(`https://job-application-tracker-api-v7ay.onrender.com/api/applications/${id}/`, {
       headers: {
         Authorization: `Token ${localStorage.getItem('token')}`,
       },
@@ -37,7 +37,7 @@ function JobDetails() {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/api/applications/${id}/`,
+        `https://job-application-tracker-api-v7ay.onrender.com/api/applications/${id}/`,
         {
           method: 'DELETE',
           headers: {

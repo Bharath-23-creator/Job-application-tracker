@@ -9,7 +9,7 @@ function Navbar() {
 
   async function handleLogout() {
     try {
-      await fetch('http://127.0.0.1:8000/api/logout/', {
+      await fetch('https://job-application-tracker-api-v7ay.onrender.com/api/logout/', {
         method: 'POST',
         headers: {
           Authorization: `Token ${token}`,

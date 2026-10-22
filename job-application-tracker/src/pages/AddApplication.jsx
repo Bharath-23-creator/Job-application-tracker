@@ -25,7 +25,7 @@ function AddApplication() {
   useEffect(() => {
     if (!editId) return
 
-    fetch(`http://127.0.0.1:8000/api/applications/${editId}/`, {
+    fetch(`https://job-application-tracker-api-v7ay.onrender.com/api/applications/${editId}/`, {
       headers: {
         Authorization: `Token ${localStorage.getItem('token')}`,
       },
@@ -83,8 +83,8 @@ function AddApplication() {
 
     try {
       const url = editId
-        ? `http://127.0.0.1:8000/api/applications/${editId}/`
-        : 'http://127.0.0.1:8000/api/applications/'
+        ? `https://job-application-tracker-api-v7ay.onrender.com/api/applications/${editId}/`
+        : 'https://job-application-tracker-api-v7ay.onrender.com/api/applications/'
 
       const response = await fetch(url, {
         method: editId ? 'PUT' : 'POST',

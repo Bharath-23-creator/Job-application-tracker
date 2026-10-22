@@ -11,7 +11,7 @@ function Applications() {
   const [statusFilter, setStatusFilter] = useState('All Status')
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/applications/', {
+    fetch('https://job-application-tracker-api-v7ay.onrender.com/api/applications/', {
       headers: {
         Authorization: `Token ${localStorage.getItem('token')}`,
       },
