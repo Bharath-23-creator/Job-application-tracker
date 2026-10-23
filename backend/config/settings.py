@@ -161,7 +161,7 @@ MAILERS = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://job-application-tracker-w4vi.vercel.app/login",
+    "https://job-application-tracker-w4vi-rjpxsskiw.vercel.app",
 ]
 
 REST_FRAMEWORK = {
