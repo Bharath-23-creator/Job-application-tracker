@@ -58,10 +58,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -161,6 +161,7 @@ MAILERS = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://job-application-tracker-w4vi-git-main-bharath-gajjelas-projects.vercel.app",
     "https://job-application-tracker-w4vi-rjpxsskiw.vercel.app",
 ]
 
