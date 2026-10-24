@@ -163,6 +163,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://job-application-tracker-w4vi-git-main-bharath-gajjelas-projects.vercel.app",
     "https://job-application-tracker-w4vi-rjpxsskiw.vercel.app",
+    "https://job-application-tracker-job-applica.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
